@@ -1,0 +1,77 @@
+.flexCol {
+    display: flex;
+    flex-direction: column;
+}
+.flexRow {
+    display: flex;
+    flex-direction: row;
+}
+
+
+
+body {
+    margin: 0;
+    height: 100vh;
+    box-sizing: border-box;
+    justify-content: space-around;
+    align-items: center;
+
+    main {
+        margin-top: 15%;
+        margin: auto;
+        width: 50%;
+        border: 1px solid green;
+        align-items: center;
+
+        label {
+            width: 90%;
+            padding-top: 2%;
+            margin-top: 2%;
+        }
+        
+        input {
+            margin-top: 2%;
+            padding-top: 2%;
+            width: 90%;
+        }
+        
+        .valueBtnContainer {
+            flex-wrap: wrap;
+        
+        
+            .valueBtn {
+            margin: 2%;
+            padding: 2%;
+            width: 25%;
+        }
+    
+    
+        }
+    
+    
+    
+    }
+
+
+    #resultSection {
+width: 90%;
+margin: 2%;
+padding: 2%;
+
+.flexRow {
+    justify-content: space-between;
+
+
+
+
+.resultInput {
+    width: 40%;
+    margin: 2%;
+    padding: 2%;
+}
+
+}
+
+    }
+
+}

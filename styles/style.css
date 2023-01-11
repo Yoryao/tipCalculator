@@ -1,0 +1,57 @@
+.flexCol {
+  display: flex;
+  flex-direction: column;
+}
+
+.flexRow {
+  display: flex;
+  flex-direction: row;
+}
+
+body {
+  margin: 0;
+  height: 100vh;
+  box-sizing: border-box;
+  justify-content: space-around;
+  align-items: center;
+}
+body main {
+  margin-top: 15%;
+  margin: auto;
+  width: 50%;
+  border: 1px solid green;
+  align-items: center;
+}
+body main label {
+  width: 90%;
+  padding-top: 2%;
+  margin-top: 2%;
+}
+body main input {
+  margin-top: 2%;
+  padding-top: 2%;
+  width: 90%;
+}
+body main .valueBtnContainer {
+  flex-wrap: wrap;
+}
+body main .valueBtnContainer .valueBtn {
+  margin: 2%;
+  padding: 2%;
+  width: 25%;
+}
+body #resultSection {
+  width: 90%;
+  margin: 2%;
+  padding: 2%;
+}
+body #resultSection .flexRow {
+  justify-content: space-between;
+}
+body #resultSection .flexRow .resultInput {
+  width: 40%;
+  margin: 2%;
+  padding: 2%;
+}
+
+/*# sourceMappingURL=style.css.map */

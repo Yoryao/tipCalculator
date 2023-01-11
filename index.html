@@ -3,53 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-
+    <link   rel="icon" type="image/png"     sizes="32x32"  href="./images/favicon-32x32.png" />
+    <link rel="stylesheet" href="./styles/style.css">
     <title>Frontend Mentor | Tip calculator app</title>
-  </head>
-  <body>
-    <img src="" alt="" />
+  </head> 
+  <body class="flexCol">
+    <img src="./images/logo.svg" alt="" />
 
     <main id="appContainer" class="flexCol">
-      <label for=""><input type="number" name="" id="" /> Bill</label>
+      <label for="billAmount">Bill</label>
+      <input type="number" value="" name="billAmount" id="billAmount" />
 
-      <label for="">Select Tip %
-        <input type="button" value="5%" />
-        <input type="button" value="10%" />
-        <input type="button" value="15%" />
-        <input type="button" value="25%" />
-        <input type="button" value="50%" />
-        <input type="number" value="Custom" />
-      </label>
+      <label for="">Select Tip %</label>
+      <div class="flexRow valueBtnContainer">
+        <input onclick="calcValue(value)" class="valueBtn" type="button" value="5" />
+        <input onclick="calcValue(value)" class="valueBtn" type="button" value="10" />
+        <input onclick="calcValue(value)" class="valueBtn" type="button" value="15" />
+        <input onclick="calcValue(value)" class="valueBtn" type="button" value="25" />
+        <input onclick="calcValue(value)" class="valueBtn" type="button" value="50" />
+        <input onclick="calcValue(value)" class="valueBtn" type="number" value="" placeholder="Custom" />
+      </div>
 
-        <label for="">Number of People <input type="number" name="" id="" /></label>
+        <label for="">Number of People</label>
+        <input type="number" name="" value="0" id="peopleNumber" />
 
       <section id="resultSection" class="flexCol">
+        <div class="flexRow">
+          <div class="flexCol">
+            <label for="">Amount </label>
+              <p>/ person </p>
+            </div>
+            <input class="resultInput" type="text" name="" id="tipPerson">
+          </div>
 
-<div class="flexRow">
-  <div class="flexCol">
-    <label for="">Amount </label>
-    <p>/
-      person </p>
-  </div>
-  <input type="text" name="" id="">
-</div>
-<div class="flexRow">
-  <div class="flexCol">
-    <label for="">Total </label>
-    <p>/ person </p>
-  </div>
-  <input type="text" name="" id="">
-</div>
-<button>Reset</button>
+          <div class="flexRow">
+            <div class="flexCol">
+              <label for="">Total </label>
+              <p>/ person </p>
+            </div>
+            <input class="resultInput" type="text" name="" id="totalPerson">
+          </div>
+          <button onclick="calculate()" >Reset</button>
       </section>
     </main>
+    <script src="./app.js"></script>
   </body>
 </html>
