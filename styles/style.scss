@@ -1,3 +1,5 @@
+@use "colors.scss";
+
 .flexCol {
     display: flex;
     flex-direction: column;
@@ -7,49 +9,83 @@
     flex-direction: row;
 }
 
+.label {
+    font-family: monospace;
+    font-size: 18px;
+    color: colors.$VerydarkCyan;
+    font-weight: bold;
+    
+}
+.form {
+    font-family: monospace;
+    font-size: 24px;
+    font-weight: 700;
+}
 
 
 body {
-    margin: 0;
-    height: 100vh;
     box-sizing: border-box;
     justify-content: space-around;
     align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: colors.$LightgrayishCyan;
+
+    img {
+        margin-top: 25%;
+        margin-bottom: 10%;
+    }
+
+
 
     main {
-        margin-top: 15%;
-        margin: auto;
-        width: 50%;
-        border: 1px solid green;
+        width: 100%;
+        border-radius: 20px;
         align-items: center;
+        background-color: colors.$White;
 
         label {
-            width: 90%;
+            width: 85%;
             padding-top: 2%;
             margin-top: 2%;
         }
         
         input {
-            margin-top: 2%;
             padding-top: 2%;
-            width: 90%;
+            width: 85%;
+            border: none;
+            border-radius: 5px;
+            background-color: colors.$VerylightGrayishCyan;
+            color: colors.$VerydarkCyan;
         }
         
         .valueBtnContainer {
             flex-wrap: wrap;
-        
-        
+            justify-content: space-between;
+            width: 85%;
+            
+            
             .valueBtn {
-            margin: 2%;
-            padding: 2%;
-            width: 25%;
+                margin: 2% 0%;
+                padding: 2%;
+                width: 45%;
+                background-color: colors.$VerydarkCyan;
+                color: colors.$VerylightGrayishCyan;
+            }
+            
+            #customBtn {
+                max-width: 40%;
+            }  
+            
+            #billAmount {
+                border: 1px solid red;
+                display: flex;
+                justify-content: end;
+                align-items: center;
+                text-align: right;
+                background-color: colors.$VerylightGrayishCyan;  
+            }
         }
-    
-    
-        }
-    
-    
-    
     }
 
 
