@@ -36,8 +36,6 @@ body {
         margin-bottom: 10%;
     }
 
-
-
     main {
         width: 100%;
         border-radius: 20px;
@@ -50,6 +48,11 @@ body {
             margin-top: 2%;
         }
         
+        .editableInput {
+            text-align: right;
+            background-color: colors.$VerylightGrayishCyan;  
+        }
+
         input {
             padding-top: 2%;
             width: 85%;
@@ -65,6 +68,7 @@ body {
             width: 85%;
             
             
+            
             .valueBtn {
                 margin: 2% 0%;
                 padding: 2%;
@@ -77,37 +81,42 @@ body {
                 max-width: 40%;
             }  
             
-            #billAmount {
+        }
+  
+      
+
+    #resultSection {
+        width: 85%;
+        padding: 5%;
+        border-radius: 15px;
+        background-color: colors.$VerydarkCyan;
+        
+        .flexRow {
+            justify-content: space-between;
+            .flexCol {
                 border: 1px solid red;
-                display: flex;
-                justify-content: end;
-                align-items: center;
-                text-align: right;
-                background-color: colors.$VerylightGrayishCyan;  
+                width: 50%;
+                label {
+                    color: red;
+                    height: 50%;
+                }
+                p {
+                    height: 50%;
+                    color: yellow;
+                }
+            }
+
+            
+            .resultInput {
+                border: 1px solid red;
+                width: 50%;
+                height: 100%;
+                
+                background-color: colors.$VerydarkCyan;
+                color: colors.$LightgrayishCyan;
+                
             }
         }
     }
-
-
-    #resultSection {
-width: 90%;
-margin: 2%;
-padding: 2%;
-
-.flexRow {
-    justify-content: space-between;
-
-
-
-
-.resultInput {
-    width: 40%;
-    margin: 2%;
-    padding: 2%;
-}
-
-}
-
     }
-
 }

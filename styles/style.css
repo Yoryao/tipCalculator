@@ -44,6 +44,10 @@ body main label {
   padding-top: 2%;
   margin-top: 2%;
 }
+body main .editableInput {
+  text-align: right;
+  background-color: hsl(189deg, 41%, 97%);
+}
 body main input {
   padding-top: 2%;
   width: 85%;
@@ -67,26 +71,33 @@ body main .valueBtnContainer .valueBtn {
 body main .valueBtnContainer #customBtn {
   max-width: 40%;
 }
-body main .valueBtnContainer #billAmount {
-  border: 1px solid red;
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  text-align: right;
-  background-color: hsl(189deg, 41%, 97%);
+body main #resultSection {
+  width: 85%;
+  padding: 5%;
+  border-radius: 15px;
+  background-color: hsl(183deg, 100%, 15%);
 }
-body #resultSection {
-  width: 90%;
-  margin: 2%;
-  padding: 2%;
-}
-body #resultSection .flexRow {
+body main #resultSection .flexRow {
   justify-content: space-between;
 }
-body #resultSection .flexRow .resultInput {
-  width: 40%;
-  margin: 2%;
-  padding: 2%;
+body main #resultSection .flexRow .flexCol {
+  border: 1px solid red;
+  width: 50%;
+}
+body main #resultSection .flexRow .flexCol label {
+  color: red;
+  height: 50%;
+}
+body main #resultSection .flexRow .flexCol p {
+  height: 50%;
+  color: yellow;
+}
+body main #resultSection .flexRow .resultInput {
+  border: 1px solid red;
+  width: 50%;
+  height: 100%;
+  background-color: hsl(183deg, 100%, 15%);
+  color: hsl(185deg, 41%, 84%);
 }
 
 /*# sourceMappingURL=style.css.map */
