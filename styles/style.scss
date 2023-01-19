@@ -22,6 +22,9 @@
     font-weight: 700;
 }
 
+* {
+    box-sizing: border-box;
+}
 
 body {
     box-sizing: border-box;
@@ -86,37 +89,46 @@ body {
       
 
     #resultSection {
+        justify-content: space-evenly;
         width: 85%;
+        margin-top: 10%;
         padding: 5%;
+        margin-bottom: 10%;
         border-radius: 15px;
         background-color: colors.$VerydarkCyan;
         
         .flexRow {
-            justify-content: space-between;
             .flexCol {
-                border: 1px solid red;
                 width: 50%;
                 label {
-                    color: red;
-                    height: 50%;
+                    height: 40%;
+                    color: colors.$White;
                 }
                 p {
-                    height: 50%;
-                    color: yellow;
+                    color: colors.$White;
+                    height: 40%;
                 }
             }
 
             
             .resultInput {
-                border: 1px solid red;
                 width: 50%;
                 height: 100%;
-                
+                text-align: right;
+                font-size: 2.5rem;
                 background-color: colors.$VerydarkCyan;
                 color: colors.$LightgrayishCyan;
                 
             }
         }
+            button {
+                margin-top: 4%;
+                height: 50px;
+                border-radius: 7px;
+                border: none;
+                background-color: colors.$LightgrayishCyan;
+            }
+        
     }
     }
 }

@@ -35,8 +35,8 @@ function calculate () {
 let resultTip = document.getElementById("tipPerson");
 let resultTotal = document.getElementById("totalPerson");
 
-resultTip.value = tipPerson;
-resultTotal.value = totalPerson;
+resultTip.value = "$" + tipPerson;
+resultTotal.value = "$" + totalPerson ;
 
 
 }
